@@ -2,12 +2,143 @@ introspection:
   url: http://localhost:8080/graphql
   
 info:
-  title: Player Management API
+  title: 🏏 Cricket Player Management API
   description: |
-    A GraphQL API for managing cricket players and teams.
-    This API provides operations to create, read, and query player information.
+    # Welcome to the Cricket Player Management API
+    
+    A comprehensive GraphQL API designed for managing cricket players and teams in the Indian Premier League (IPL). 
+    This API provides powerful operations to create, read, update, and query player information with real-time data access.
+    
+    ## 🚀 Key Features
+    
+    - **Player Management**: Create and manage cricket player profiles
+    - **Team Operations**: Handle team assignments and queries
+    - **Real-time Queries**: Fast and efficient data retrieval
+    - **Type Safety**: Strongly typed GraphQL schema
+    - **Interactive Documentation**: Built-in query explorer
+    
+    ## 🏆 Supported Teams
+    
+    - **CSK** - Chennai Super Kings
+    - **MI** - Mumbai Indians  
+    - **RCB** - Royal Challengers Bangalore
+    - **DC** - Delhi Capitals
+    - **GT** - Gujarat Titans
+    
+    ## 📚 Getting Started
+    
+    Use the interactive query builder below to explore the API. All operations are documented with examples and response formats.
+    
+    ### Example Query
+    ```graphql
+    query GetAllPlayers {
+      findAll {
+        id
+        name
+        team
+        city
+      }
+    }
+    ```
+    
+    ## 🔧 API Endpoint
+    - **GraphQL Endpoint**: `http://localhost:8080/graphql`
+    - **Method**: POST
+    - **Content-Type**: application/json
+    
   version: 1.0.0
-  
+  contact:
+    name: Cricket API Team
+    email: support@cricketapi.com
+    url: https://github.com/your-org/cricket-api
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+    
 theme:
-  primaryColor: "#1976d2"
-  secondaryColor: "#424242"
+  primaryColor: "#FF6B35"
+  secondaryColor: "#2C3E50"
+  accentColor: "#F39C12"
+  backgroundColor: "#FFFFFF"
+  textColor: "#2C3E50"
+  linkColor: "#3498DB"
+  codeColor: "#E74C3C"
+  codeBackgroundColor: "#F8F9FA"
+  fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+  fontSize: "14px"
+  lineHeight: "1.6"
+  
+# Add custom CSS for enhanced styling
+customCss: |
+  .doc-heading {
+    background: linear-gradient(135deg, #FF6B35, #F39C12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .operation-heading {
+    color: #2C3E50;
+    border-left: 4px solid #FF6B35;
+    padding-left: 1rem;
+  }
+  
+  .definition-heading {
+    color: #2C3E50;
+    border-bottom: 2px solid #F39C12;
+    padding-bottom: 0.5rem;
+  }
+  
+  .example-section {
+    background: #F8F9FA;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .example-section h5 {
+    color: #FF6B35;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  pre {
+    background: #2C3E50 !important;
+    border-radius: 6px;
+    padding: 1rem;
+  }
+  
+  code {
+    color: #E8F4FD !important;
+  }
+  
+  .nav-group-title {
+    color: #FF6B35;
+    font-weight: 600;
+  }
+  
+  .sidebar-top-container {
+    background: linear-gradient(135deg, #FF6B35, #F39C12);
+    padding: 1rem;
+  }
+  
+  #logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .powered-by {
+    background: #2C3E50;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .powered-by:hover {
+    background: #34495E;
+  }

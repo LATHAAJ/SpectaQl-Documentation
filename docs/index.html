@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Player Management API</title>
+    <title>🏏 Cricket Player Management API</title>
     <link rel="stylesheet" href="stylesheets/spectaql.min.css" />
     <script src="javascripts/spectaql.min.js"></script>
   </head>
@@ -69,13 +69,59 @@
           </button>
         </div>
         <article id="content">
-          <h1 class="doc-heading">Player Management API</h1>
+          <h1 class="doc-heading">🏏 Cricket Player Management API</h1>
           <div id="introduction" data-traverse-target="introduction">
             <div id="welcome" class="doc-row">
               <div class="doc-copy">
-                <p>A GraphQL API for managing cricket players and teams. This API provides operations to create, read, and query player information.</p>
+                <h1 id="welcome-to-the-cricket-player-management-api">Welcome to the Cricket Player Management API</h1>
+                <p>A comprehensive GraphQL API designed for managing cricket players and teams in the Indian Premier League (IPL). This API provides powerful operations to create, read, update, and query player information with real-time data access.</p>
+                <h2 id="🚀-key-features">🚀 Key Features</h2>
+                <ul>
+                  <li><strong>Player Management</strong>: Create and manage cricket player profiles</li>
+                  <li><strong>Team Operations</strong>: Handle team assignments and queries</li>
+                  <li><strong>Real-time Queries</strong>: Fast and efficient data retrieval</li>
+                  <li><strong>Type Safety</strong>: Strongly typed GraphQL schema</li>
+                  <li><strong>Interactive Documentation</strong>: Built-in query explorer</li>
+                </ul>
+                <h2 id="🏆-supported-teams">🏆 Supported Teams</h2>
+                <ul>
+                  <li><strong>CSK</strong> - Chennai Super Kings</li>
+                  <li><strong>MI</strong> - Mumbai Indians </li>
+                  <li><strong>RCB</strong> - Royal Challengers Bangalore</li>
+                  <li><strong>DC</strong> - Delhi Capitals</li>
+                  <li><strong>GT</strong> - Gujarat Titans</li>
+                </ul>
+                <h2 id="📚-getting-started">📚 Getting Started</h2>
+                <p>Use the interactive query builder below to explore the API. All operations are documented with examples and response formats.</p>
+                <h3 id="example-query">Example Query</h3>
+                <pre><code class="hljs language-graphql"><span class="hljs-symbol"><span class="hljs-keyword">query</span> GetAllPlayers <span class="hljs-tag">{
+  <span class="hljs-symbol">findAll <span class="hljs-tag">{
+    <span class="hljs-symbol">id</span>
+    <span class="hljs-symbol">name</span>
+    <span class="hljs-symbol">team</span>
+    <span class="hljs-symbol">city</span>
+  }</span></span>
+}</span></span>
+</code></pre>
+                <h2 id="🔧-api-endpoint">🔧 API Endpoint</h2>
+                <ul>
+                  <li><strong>GraphQL Endpoint</strong>: <code>http://localhost:8080/graphql</code></li>
+                  <li><strong>Method</strong>: POST</li>
+                  <li><strong>Content-Type</strong>: application/json</li>
+                </ul>
               </div>
               <div class="doc-examples">
+                <div class="example-section welcome-contact-section">
+                  <h5>Contact</h5>
+                  <p class="contact-name">Cricket API Team</p>
+                  <p class="contact-email"><a href="mailto:support@cricketapi.com">support@cricketapi.com</a></p>
+                  <p class="contact-url"><a href="https://github.com/your-org/cricket-api">https://github.com/your-org/cricket-api</a></p>
+                </div>
+                <div class="example-section welcome-license-section">
+                  <h5>License</h5>
+                  <p class="license-name">MIT</p>
+                  <p class="license-url"><a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a></p>
+                </div>
                 <div class="example-section welcome-api-endpoints-section example-section-is-code">
                   <h5>API Endpoints</h5>
                   <pre><code>http://localhost:8080/graphql</code></pre>
@@ -120,8 +166,8 @@
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"findAll"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
       <span class="hljs-punctuation">{</span>
-        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"4"</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"team"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"CSK"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
       <span class="hljs-punctuation">}</span>
@@ -192,10 +238,10 @@
                   <pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"findById"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"4"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"team"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"CSK"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
+      <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
@@ -265,7 +311,7 @@
     <span class="hljs-attr">"findByTeam"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
       <span class="hljs-punctuation">{</span>
         <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"4"</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"team"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"CSK"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
       <span class="hljs-punctuation">}</span>
@@ -360,10 +406,10 @@
                   <pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"createPlayer"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"4"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"team"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"CSK"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
+      <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
@@ -456,10 +502,10 @@
                 <div class="example-section example-section-is-code">
                   <h5>Example</h5>
                   <pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"4"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"team"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"CSK"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
+  <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
 <span class="hljs-punctuation">}</span>
 </code></pre>
                 </div>
