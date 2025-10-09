@@ -4,7 +4,6 @@ enum Team {
     RCB
     DC
     GT
-    IST
 }
 
 type Player {
@@ -12,7 +11,6 @@ type Player {
     name: String
     team: Team
     city: String
-    newCity:String
 }
 
 type Query {
