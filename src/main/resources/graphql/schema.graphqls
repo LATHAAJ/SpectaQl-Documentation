@@ -1,24 +1,73 @@
+"""
+Represents the different IPL (Indian Premier League) teams.
+Each team has a unique abbreviation used throughout the system.
+"""
 enum Team {
+    """Chennai Super Kings - The yellow army from Chennai"""
     CSK
+    """Mumbai Indians - The blue brigade from Mumbai"""
     MI
+    """Royal Challengers Bangalore - The red and gold from Bangalore"""
     RCB
+    """Delhi Capitals - The blue and red from Delhi"""
     DC
+    """Gujarat Titans - The blue and gold from Gujarat"""
     GT
 }
 
+"""
+Represents a cricket player in the IPL system.
+Contains all the essential information about a player including their team affiliation.
+"""
 type Player {
+    """Unique identifier for the player"""
     id: ID!
+    """Full name of the cricket player"""
     name: String
+    """The IPL team the player belongs to"""
     team: Team
+    """The city the player is associated with"""
     city: String
 }
 
 type Query {
+    """
+    Retrieves all cricket players from the database.
+    Returns a list of all players with their basic information including ID, name, team, and city.
+    """
     findAll: [Player]
+    
+    """
+    Finds a specific cricket player by their unique ID.
+    Returns the player details if found, or null if the player doesn't exist.
+    
+    Args:
+        id: The unique identifier of the player to retrieve
+    """
     findById(id: ID!): Player
+    
+    """
+    Retrieves all players belonging to a specific IPL team.
+    Useful for getting team rosters and analyzing team compositions.
+    
+    Args:
+        team: The team abbreviation (CSK, MI, RCB, DC, or GT)
+    """
     findByTeam(team: Team!): [Player]
 }
 
 type Mutation {
+    """
+    Creates a new cricket player in the system.
+    All required fields must be provided to successfully create a player.
+    
+    Args:
+        name: The full name of the player (required)
+        team: The IPL team the player belongs to (required)
+        city: The city associated with the player (optional)
+    
+    Returns:
+        The newly created player object with assigned ID
+    """
     createPlayer(name: String!, team: Team!, city: String!): Player
 }
