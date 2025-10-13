@@ -140,6 +140,14 @@
             </h2>
             <div class="doc-row">
               <div class="doc-copy">
+                <div class="operation-description doc-copy-section">
+                  <h5>Description</h5>
+                  <p>Retrieves all cricket players from the database. Returns a list of all players with their basic information including ID, name, team, and city.</p>
+                </div>
+              </div>
+            </div>
+            <div class="doc-row">
+              <div class="doc-copy">
                 <div class="operation-response doc-copy-section">
                   <h5>Response</h5>
                   <p> Returns <a href="#definition-Player"><code>[Player]</code></a>
@@ -166,8 +174,8 @@
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"findAll"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
       <span class="hljs-punctuation">{</span>
-        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"4"</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"team"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"CSK"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
       <span class="hljs-punctuation">}</span>
@@ -186,6 +194,15 @@
             <h2 class="operation-heading ">
               <code>findById</code>
             </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <div class="operation-description doc-copy-section">
+                  <h5>Description</h5>
+                  <p>Finds a specific cricket player by their unique ID. Returns the player details if found, or null if the player doesn&#39;t exist.</p>
+                  <p>Args: id: The unique identifier of the player to retrieve</p>
+                </div>
+              </div>
+            </div>
             <div class="doc-row">
               <div class="doc-copy">
                 <div class="operation-response doc-copy-section">
@@ -230,7 +247,7 @@
                 </div>
                 <div class="example-section example-section-is-code operation-variables-example">
                   <h5>Variables</h5>
-                  <pre><code class="hljs language-json"><span class="hljs-punctuation">{</span><span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"4"</span><span class="hljs-punctuation">}</span>
+                  <pre><code class="hljs language-json"><span class="hljs-punctuation">{</span><span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">}</span>
 </code></pre>
                 </div>
                 <div class="example-section example-section-is-code operation-response-example">
@@ -239,7 +256,7 @@
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"findById"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
       <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"4"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"team"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"CSK"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
     <span class="hljs-punctuation">}</span>
@@ -257,6 +274,15 @@
             <h2 class="operation-heading ">
               <code>findByTeam</code>
             </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <div class="operation-description doc-copy-section">
+                  <h5>Description</h5>
+                  <p>Retrieves all players belonging to a specific IPL team. Useful for getting team rosters and analyzing team compositions.</p>
+                  <p>Args: team: The team abbreviation (CSK, MI, RCB, DC, or GT)</p>
+                </div>
+              </div>
+            </div>
             <div class="doc-row">
               <div class="doc-copy">
                 <div class="operation-response doc-copy-section">
@@ -310,10 +336,10 @@
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"findByTeam"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
       <span class="hljs-punctuation">{</span>
-        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"4"</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">,</span>
+        <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"team"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"CSK"</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
+        <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
       <span class="hljs-punctuation">}</span>
     <span class="hljs-punctuation">]</span>
   <span class="hljs-punctuation">}</span>
@@ -328,6 +354,16 @@
             <h2 class="operation-heading ">
               <code>createPlayer</code>
             </h2>
+            <div class="doc-row">
+              <div class="doc-copy">
+                <div class="operation-description doc-copy-section">
+                  <h5>Description</h5>
+                  <p>Creates a new cricket player in the system. All required fields must be provided to successfully create a player.</p>
+                  <p>Args: name: The full name of the player (required) team: The IPL team the player belongs to (required) city: The city associated with the player (optional)</p>
+                  <p>Returns: The newly created player object with assigned ID</p>
+                </div>
+              </div>
+            </div>
             <div class="doc-row">
               <div class="doc-copy">
                 <div class="operation-response doc-copy-section">
@@ -395,7 +431,7 @@
                 <div class="example-section example-section-is-code operation-variables-example">
                   <h5>Variables</h5>
                   <pre><code class="hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"team"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"CSK"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
 <span class="hljs-punctuation">}</span>
@@ -407,9 +443,9 @@
   <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">"createPlayer"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
       <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-number">4</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span><span class="hljs-punctuation">,</span>
       <span class="hljs-attr">"team"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"CSK"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"abc123"</span>
+      <span class="hljs-attr">"city"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"xyz789"</span>
     <span class="hljs-punctuation">}</span>
   <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span>
@@ -429,6 +465,11 @@
                 </div>
               </div>
               <div class="doc-examples">
+                <div class="example-section example-section-is-code">
+                  <h5>Example</h5>
+                  <pre><code class="hljs language-json"><span class="hljs-literal"><span class="hljs-keyword">true</span></span>
+</code></pre>
+                </div>
               </div>
             </div>
           </section>
@@ -447,7 +488,7 @@
               <div class="doc-examples">
                 <div class="example-section example-section-is-code">
                   <h5>Example</h5>
-                  <pre><code class="hljs language-json"><span class="hljs-number">4</span>
+                  <pre><code class="hljs language-gql"><span class="hljs-symbol">"4"</span>
 </code></pre>
                 </div>
               </div>
@@ -460,6 +501,10 @@
             <h2 class="definition-heading">Player</h2>
             <div class="doc-row">
               <div class="doc-copy">
+                <div class="definition-description doc-copy-section">
+                  <h5>Description</h5>
+                  <p>Represents a cricket player in the IPL system. Contains all the essential information about a player including their team affiliation.</p>
+                </div>
                 <div class="definition-properties doc-copy-section">
                   <h5>Fields</h5>
                   <table>
@@ -473,26 +518,22 @@
                       <tr>
                         <td data-property-name=""><span class="property-name"><code>id</code></span> - <span class="property-type"><a href="#definition-ID"><code>ID!</code></a></span>
                         </td>
-                        <td>
-                        </td>
+                        <td> Unique identifier for the player </td>
                       </tr>
                       <tr>
                         <td data-property-name=""><span class="property-name"><code>name</code></span> - <span class="property-type"><a href="#definition-String"><code>String</code></a></span>
                         </td>
-                        <td>
-                        </td>
+                        <td> Full name of the cricket player </td>
                       </tr>
                       <tr>
                         <td data-property-name=""><span class="property-name"><code>team</code></span> - <span class="property-type"><a href="#definition-Team"><code>Team</code></a></span>
                         </td>
-                        <td>
-                        </td>
+                        <td> The IPL team the player belongs to </td>
                       </tr>
                       <tr>
                         <td data-property-name=""><span class="property-name"><code>city</code></span> - <span class="property-type"><a href="#definition-String"><code>String</code></a></span>
                         </td>
-                        <td>
-                        </td>
+                        <td> The city the player is associated with </td>
                       </tr>
                     </tbody>
                   </table>
@@ -527,7 +568,7 @@
               <div class="doc-examples">
                 <div class="example-section example-section-is-code">
                   <h5>Example</h5>
-                  <pre><code class="hljs language-gql"><span class="hljs-symbol">"xyz789"</span>
+                  <pre><code class="hljs language-gql"><span class="hljs-symbol">"abc123"</span>
 </code></pre>
                 </div>
               </div>
@@ -540,6 +581,10 @@
             <h2 class="definition-heading">Team</h2>
             <div class="doc-row">
               <div class="doc-copy">
+                <div class="definition-description doc-copy-section">
+                  <h5>Description</h5>
+                  <p>Represents the different IPL (Indian Premier League) teams. Each team has a unique abbreviation used throughout the system.</p>
+                </div>
                 <div class="definition-properties doc-copy-section">
                   <h5>Values</h5>
                   <table>
@@ -554,36 +599,31 @@
                         <td>
                           <p><code>CSK</code></p>
                         </td>
-                        <td>
-                        </td>
+                        <td> Chennai Super Kings - The yellow army from Chennai </td>
                       </tr>
                       <tr>
                         <td>
                           <p><code>MI</code></p>
                         </td>
-                        <td>
-                        </td>
+                        <td> Mumbai Indians - The blue brigade from Mumbai </td>
                       </tr>
                       <tr>
                         <td>
                           <p><code>RCB</code></p>
                         </td>
-                        <td>
-                        </td>
+                        <td> Royal Challengers Bangalore - The red and gold from Bangalore </td>
                       </tr>
                       <tr>
                         <td>
                           <p><code>DC</code></p>
                         </td>
-                        <td>
-                        </td>
+                        <td> Delhi Capitals - The blue and red from Delhi </td>
                       </tr>
                       <tr>
                         <td>
                           <p><code>GT</code></p>
                         </td>
-                        <td>
-                        </td>
+                        <td> Gujarat Titans - The blue and gold from Gujarat </td>
                       </tr>
                     </tbody>
                   </table>
